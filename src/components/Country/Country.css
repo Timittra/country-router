@@ -1,0 +1,22 @@
+.all-countries{
+    border: 2px solid green;
+    margin: 20px 200px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.all-countries h3{
+    font-size: 40px;
+    color: chocolate;
+}
+.all-countries h4{
+    font-size: 30px;
+    color: coral;
+}
+.all-countries p{
+    font-size: 16px;
+    color: darkblue;
+}
+.all-countries h5{
+    font-size: 18px;
+    color: darkorange;
+}
