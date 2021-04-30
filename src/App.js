@@ -9,12 +9,14 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import NoMatch from './components/NoMatch/NoMatch';
-import Country from './components/Country/Country';
 import CountryDetail from './components/CountryDetail/CountryDetail';
+import Header from './components/Header/Header';
+
 
 function App() {
   return (
     <Router>
+        <Header />
       <Switch>
         <Route path="/home">
           <Home/>

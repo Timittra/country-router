@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './Country.css';
@@ -32,9 +33,15 @@ const useStyles = makeStyles((theme) => ({
       color: 'white',
     },
     link: {
-        margin: '10px',
+        margin: '12px',
     }
   }));
+
+  const defaultProps = {
+    id: "name",
+    // display: ["population", "region", "capital"],
+};
+
 
 const Country = (props) => {
     let { name, flag } = props.country || {};
@@ -46,6 +53,9 @@ const Country = (props) => {
         const url = `/country/${countryName}`;
         history.push(url);
     }
+
+  
+
     return (
         <div className={classes.root}>
             <GridList cellHeight={200} spacing={1} className={classes.gridList}>
@@ -58,7 +68,7 @@ const Country = (props) => {
                     />
                     </GridListTile>
                 <Typography component='p' className={classes.link}>
-                    <Link to={`/country/${name}`}>Show Detail about {name}</Link>
+                    <Link to={`/country/${name}`}>see more</Link>
                     <Box m={2} />
                 </Typography>
                 <Typography component='p' style={{ marginTop: '-180px' }}>
